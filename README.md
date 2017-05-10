@@ -7,7 +7,7 @@ This is quick solution to JIRA not having an out the box way of reporting time l
 
 #### Installation
 1. Clone this GIT repository.
-2. Run `composer install` to install PHP dependencies.
+2. Run `composer install` from your terminal to install PHP dependencies - if you haven't got composer installed please follow the [official composer install guide](https://getcomposer.org/doc/00-intro.md "Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.")
 3. edit the `$cfg` variable inside `index.php` to match your own JIRA domain / user login.
 
 #### Usage
