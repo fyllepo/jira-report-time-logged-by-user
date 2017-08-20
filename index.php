@@ -38,7 +38,8 @@ function getData($projectKey) {
   $headers[] = "Authorization: Basic " . base64_encode($cfg['jira_user_email'] . ':' . $cfg['jira_user_password']);
   $headers[] = "Content-Type: application/json";
   curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  
   $result = curl_exec($ch);
 
   if (curl_errno($ch)) {
